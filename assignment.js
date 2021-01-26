@@ -2,7 +2,7 @@
 function kilometerToMeter(kilometer){
 
         // check if the parameter is not a positive number to send error
-    if(typeof(kilometer) != 'number' && kilometer < 0){
+    if(typeof(kilometer) != 'number' || kilometer < 0){
         return "ERROR: Invalid Input! Please Input A Positive Number.";
     }
     return kilometer * 1000;
